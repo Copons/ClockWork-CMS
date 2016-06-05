@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteRule ^page/([0-9]+)/.*/$ index.php?type=page&article=$1
+RewriteRule ^contacts/$ index.php?type=contacts
+
+RewriteRule ^news/([0-9]+)/.*/$ index.php?type=news&article=$1
+RewriteRule ^news/page/([0-9]+)/$ index.php?type=news&pagenum=$1
+RewriteRule ^news/$ index.php?type=news

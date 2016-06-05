@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/* HTML TAGS */
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td, object, embed { margin: 0; padding: 0; top: 0px; left: 0px; }
+
+body {
+	background-color: #000066;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+h1 {
+	background-color: #000066;
+	border-bottom: 7px solid #CCCCCC;
+	color: #FFFFFF;
+	font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	letter-spacing: 1px;
+	padding: 10px;
+}
+h1 img {
+	margin-top: -10px;
+	margin-bottom: -10px;
+	vertical-align: text-bottom;
+}
+
+h3 {
+	font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+h4 {
+	font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	letter-spacing: 1px;
+	padding: 5px;
+}
+
+a img {
+	border: none;
+}
+
+
+
+
+/* COMMON */
+
+.clear {
+	clear: both;
+}
+
+
+
+
+/* MAIN MENU */
+
+#mainMenu {
+	background-color: #003399;
+	border-bottom: 5px solid #CCCCCC;
+	font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+#mainMenu table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#mainMenu td {
+	padding: 5px;
+	text-align: center;
+	width: 12%;
+}
+#mainMenu td:hover {
+	background-color: #000066;
+}
+
+#mainMenu td a,
+#mainMenu td a:active,
+#mainMenu td a:hover,
+#mainMenu td a:visited {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
+/* MENU */
+
+#menu {
+	background-color: #6699CC;
+	border-bottom: 3px solid #CCCCCC;
+	font-size: 12px;
+	min-height: 34px;
+}
+
+#menu h2 {
+	color: #FFFFFF;
+	float: left;
+	font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 7px;
+	padding-left: 20px;
+}
+#menu h2 span {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding: 10px;
+	width:70%;
+}
+
+#menu ul li {
+	display: inline;
+}
+#menu ul li a,
+#menu ul li a:visited {
+	color: #FFFFFF;
+	padding: 10px;
+	text-decoration: none;
+}
+#menu ul li a:hover,
+#menu ul li a:active {
+	background-color: #003399;
+}
+
+#menu img {
+	margin-top: -10px;
+	margin-bottom: -10px;
+	vertical-align: middle;
+}
+
+#menu input, 
+#menu select,
+#menu select option {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: -4px 0 -4px 0;
+	padding: 3px 3px 1px 3px;
+}
+
+
+
+
+/* ERROR */
+
+#error {
+	background-color: #FF0000;
+	border-bottom: 1px solid #CCCCCC;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: center;
+}
+
+#error ul {
+	list-style-image: url(../images/alert.png);
+	margin: 0px;
+	padding: 7px;
+}
+
+#error ul li {
+	padding: 3px;
+}
+
+
+
+
+/* OK */
+
+#ok {
+	background-color: #00CC33;
+	border-bottom: 1px solid #CCCCCC;
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 5px;
+	text-align: center;
+}
+
+
+
+
+/* CONTAINER */
+
+#container {
+	background-color: #FFFFFF;
+	padding: 10px 0 10px 0;
+}
+
+#content {
+	padding: 0 10px 10px 10px;
+}
+
+
+
+
+/* LIST */
+
+.list {
+	border: 1px solid #CCCCCC;
+	border-collapse: collapse;
+	margin: 5px 0 5px 0;
+	width: 100%;
+}
+
+.list th {
+	border: 1px solid #999999;
+	background-color: #99CCFF;
+	color: #000000;
+	font-size: 12px;
+	padding: 7px;
+	text-align: center;
+}
+
+.list tr:hover {
+	background-color: #CCCCCC;	
+}
+
+.list td {
+	border: 1px solid #999999;
+	padding: 2px 7px 2px 7px;
+	text-align: left;
+}
+
+.list .bright {
+	background-color: #FFFFFF;
+}
+.list .dark {
+	background-color: #EEEEEE;
+}
+.list .small {
+	text-align: center;
+	width: 1%;
+}
+
+.list a,
+.list a:active,
+.list a:visited {
+	color: #003399;
+	text-decoration: none;
+}
+.list a:hover {
+	color: #000066;
+}
+
+.list img {
+	vertical-align: text-bottom;
+}
+
+
+
+
+/* EDIT */
+
+.edit {
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	border-collapse: collapse;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.edit td {
+	border: 1px solid #999999;
+	padding: 10px;
+	text-align: left;
+}
+
+.edit .name {
+	font-weight: bold;
+	width: 20%;
+}
+.edit .name .help {
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.edit .required {
+	color: #FF0000;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.edit small {
+	font-style: italic;
+}
+
+.edit .submit {
+	text-align: center;
+}
+.edit .submit input {
+	color: #00CC33;
+	font-size: 12px;
+	font-weight: bold;
+}
+.edit .submit .edit_button {
+	color: #0000CC;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.edit input,
+.edit textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	letter-spacing: 1px;
+	padding: 2px;
+}
+
+.edit select,
+.edit select option {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	padding: 2px 4px 1px 4px;
+}
+
+.edit a,
+.edit a:active,
+.edit a:visited {
+	color: #6699CC;
+	text-decoration: none;
+}
+.edit a:hover {
+	color: #003399;
+}
+
+.edit .delete a,
+.edit .delete a:active,
+.edit .delete a:visited {
+	color: #FF0000;
+	font-size: 12px;
+	text-decoration: none;
+}
+.edit .delete a:hover {
+	color: #CC0000;
+}
+
+.edit .duplicate a,
+.edit .duplicate a:active,
+.edit .duplicate a:visited {
+	color: #6699CC;
+	font-size: 12px;
+	text-decoration: none;
+}
+.edit .duplicate a:hover {
+	color: #003399;
+}
+
+.edit img {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	margin: 5px;
+	padding: 3px;
+	vertical-align: sub;
+}
+.edit .imgDelete,
+.edit .imgDuplicate,
+.edit .imgLink {
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.edit .imgLink {
+	vertical-align: text-bottom;	
+}
+
+.edit .singleText {
+	background-color: #FFFFFF;	
+}
+
+.edit .editTitle {
+	font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	letter-spacing: 1px;
+	padding: 5px;
+}
+
+
+
+
+/* PAGING */
+
+.paging {
+	/*background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	border-collapse: collapse;*/
+	font-size: 13px;
+	/*margin: 10px 0 20px 0;*/
+	margin: 0;
+	width: 25%;
+}
+
+.paging td {
+	/*border: 1px solid #999999;*/
+	padding: 5px;
+	text-align: center;
+}
+
+.paging .arrows {
+	width: 10%;	
+}
+.paging .pageNumbers {
+	width: 60%;
+}
+
+.paging a,
+.paging a:active,
+.paging a:visited {
+	color: #003399;
+	text-decoration: none;
+}
+.paging a:hover {
+	color: #000066;
+}
+
+
+
+
+/* FOOTER */
+
+#footer {
+	background-color: #000066;
+	border-top: 5px solid #CCCCCC;
+	color: #FFFFFF;
+	padding: 10px;
+	text-align: center;
+}
