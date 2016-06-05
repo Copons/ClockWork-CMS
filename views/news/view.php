@@ -6,8 +6,8 @@ try {
 	$STH = $DBH->prepare('SELECT id, title, excerpt, date_published, featured_image
         FROM '.PREFIX.'articles
 		WHERE type = "news" AND status = "published" ORDER BY date_published DESC LIMIT :pagenum, :perpage');
-	$STH->bindParam(':pagenum', intval(($P->pagenum-1)*$elemPerPage), PDO::PARAM_INT);
-	$STH->bindParam(':perpage', intval($elemPerPage), PDO::PARAM_INT);
+	$STH->bindValue(':pagenum', intval(($P->pagenum-1)*$elemPerPage), PDO::PARAM_INT);
+	$STH->bindValue(':perpage', intval($elemPerPage), PDO::PARAM_INT);
 	$STH->execute();
 	$STH->setFetchMode(PDO::FETCH_OBJ);
 	while ($n = $STH->fetch()) : ?>
